@@ -14,12 +14,13 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 header.top{position:sticky;top:0;z-index:40;background:rgba(243,237,225,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .top-in{display:flex;align-items:center;gap:14px;height:60px}
 .brand{display:flex;align-items:center;gap:10px;font-family:var(--serif)}
-.brand .seal{font-size:14px}.brand b{font-size:18px;font-weight:700;letter-spacing:2px}
+.brand .seal{font-size:14px}.brand b{font-size:18px;font-weight:700;letter-spacing:2px;white-space:nowrap}
 .nav{margin-left:6px;display:none;gap:18px;font-size:14px;font-weight:500}
 .nav a{color:var(--ink-soft)}.nav a:hover,.nav a.on{color:var(--seal-deep)}
 @media(min-width:880px){.nav{display:flex}}
 .top-cta{margin-left:auto;display:flex;gap:8px}
-.btn{font-family:var(--sans);font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:999px;border:1.5px solid transparent;display:inline-flex;align-items:center;gap:6px;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s}
+@media(max-width:560px){.brand small{display:none}.brand b{font-size:16px;letter-spacing:1px}.hideMobile{display:none}.top-in{gap:8px}.top-cta .btn{padding:8px 13px;font-size:12.5px}}
+.btn{font-family:var(--sans);font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:999px;border:1.5px solid transparent;display:inline-flex;align-items:center;gap:6px;cursor:pointer;white-space:nowrap;transition:transform .15s,box-shadow .15s,background .15s}
 .btn:active{transform:translateY(1px)}
 .btn-line{background:var(--pine);color:#fff}.btn-line:hover{box-shadow:0 6px 18px rgba(61,90,71,.32)}
 .btn-tel{background:transparent;color:var(--ink);border-color:var(--line)}.btn-tel:hover{border-color:var(--ink)}
@@ -70,17 +71,17 @@ header.top{position:sticky;top:0;z-index:40;background:rgba(243,237,225,.93);bac
 <header class="top"><div class="wrap top-in">
   <a class="brand" href="index.html"><span class="seal">得</span><b>得名禮品</b></a>
   <nav class="nav"><a href="index.html" class="">首頁</a><a href="zhuisi.html" class="">追思禮品</a><a href="kaimu.html" class="">開幕誌慶</a><a href="zhushou.html" class="">神明祝壽</a><a href="qingren.html" class="on">喜事禮品</a><a href="catalog.html" class="">完整價目表</a></nav>
-  <div class="top-cta"><a class="btn btn-tel" href="TELURL">0920119944</a><a class="btn btn-line" href="LINEURL">LINE 訂購</a></div>
+  <div class="top-cta"><a class="btn btn-tel hideMobile" href="TELURL">急單安排</a><a class="btn btn-line" href="LINEURL">LINE 訂購</a></div>
 </div></header>
 <section class="band"><div class="wrap">
   <div class="crumb"><a href="index.html">首頁</a> ／ 喜事禮品</div>
-  <div class="row"><span class="seal" style="background:#C08A2E">花</span><div><h1>喜事禮品</h1><p>情人、節慶、永生花、玩偶花束等客製花禮，依預算客製、提供配送。</p></div></div>
+  <div class="row"><span class="seal" style="background:#C08A2E">花</span><div><h1>喜事禮品</h1><p>情人、節慶、永生花、玩偶花束等客製花禮，依預算客製、僅高雄市配送。</p></div></div>
 </div></section>
-<div class="wrap"><div class="cards"><article class="card"><div class="ph-wrap"><div class="ph ph-empty"><div class="pt"><b>情人花束</b><small>照片準備中</small></div></div></div><div class="cb"><h4>情人花束</h4><div class="spec">客製・可配送</div><p>客製情人節花束，依預算與花材搭配，新鮮製作，提供配送服務。</p><a class="order" href="LINEURL">LINE 詢價訂購</a></div></article><article class="card"><div class="ph-wrap"><div class="ph ph-empty"><div class="pt"><b>客製花禮</b><small>照片準備中</small></div></div></div><div class="cb"><h4>客製花禮</h4><div class="spec">客製</div><p>各式客製花禮，依場合、預算與喜好專屬設計，替您傳達心意。</p><a class="order" href="LINEURL">LINE 詢價訂購</a></div></article><article class="card"><div class="ph-wrap"><div class="ph ph-empty"><div class="pt"><b>節慶花束</b><small>照片準備中</small></div></div></div><div class="cb"><h4>節慶花束</h4><div class="spec">客製</div><p>母親節、畢業季、生日等節慶花束，應景討喜、當季新鮮。</p><a class="order" href="LINEURL">LINE 詢價訂購</a></div></article><article class="card"><div class="ph-wrap"><div class="ph ph-empty"><div class="pt"><b>乾燥永生花</b><small>照片準備中</small></div></div></div><div class="cb"><h4>乾燥永生花</h4><div class="spec">客製</div><p>不凋永生花與乾燥花，質感耐久、長久保存，送禮自用皆宜。</p><a class="order" href="LINEURL">LINE 詢價訂購</a></div></article><article class="card"><div class="ph-wrap"><div class="ph ph-empty"><div class="pt"><b>玩偶花束</b><small>照片準備中</small></div></div></div><div class="cb"><h4>玩偶花束</h4><div class="spec">客製</div><p>玩偶結合鮮花的創意花束，可愛吸睛，送禮最有記憶點。</p><a class="order" href="LINEURL">LINE 詢價訂購</a></div></article><article class="card"><div class="ph-wrap"><div class="ph ph-empty"><div class="pt"><b>客製禮品花束</b><small>照片準備中</small></div></div></div><div class="cb"><h4>客製禮品花束</h4><div class="spec">客製</div><p>花束結合小禮品（零食、酒、禮盒等）客製組合，獨一無二。</p><a class="order" href="LINEURL">LINE 詢價訂購</a></div></article></div><div class="note"><b>客製與配送：</b>花束可依預算、花材、顏色客製，提供高雄全區配送。請 LINE 告知款式、預算、收件人、地址與希望送達時間，我們為您安排。</div></div>
+<div class="wrap"><div class="cards"><article class="card"><div class="ph-wrap"><div class="ph ph-empty"><div class="pt"><b>情人花束</b><small>照片準備中</small></div></div></div><div class="cb"><h4>情人花束</h4><div class="spec">客製・高雄配送</div><p>客製情人節花束，依預算與花材搭配，新鮮製作，提供配送服務。</p><a class="order" href="LINEURL">LINE 詢價訂購</a></div></article><article class="card"><div class="ph-wrap"><div class="ph ph-empty"><div class="pt"><b>客製花禮</b><small>照片準備中</small></div></div></div><div class="cb"><h4>客製花禮</h4><div class="spec">客製</div><p>各式客製花禮，依場合、預算與喜好專屬設計，替您傳達心意。</p><a class="order" href="LINEURL">LINE 詢價訂購</a></div></article><article class="card"><div class="ph-wrap"><div class="ph ph-empty"><div class="pt"><b>節慶花束</b><small>照片準備中</small></div></div></div><div class="cb"><h4>節慶花束</h4><div class="spec">客製</div><p>母親節、畢業季、生日等節慶花束，應景討喜、當季新鮮。</p><a class="order" href="LINEURL">LINE 詢價訂購</a></div></article><article class="card"><div class="ph-wrap"><div class="ph ph-empty"><div class="pt"><b>乾燥永生花</b><small>照片準備中</small></div></div></div><div class="cb"><h4>乾燥永生花</h4><div class="spec">客製</div><p>不凋永生花與乾燥花，質感耐久、長久保存，送禮自用皆宜。</p><a class="order" href="LINEURL">LINE 詢價訂購</a></div></article><article class="card"><div class="ph-wrap"><div class="ph ph-empty"><div class="pt"><b>玩偶花束</b><small>照片準備中</small></div></div></div><div class="cb"><h4>玩偶花束</h4><div class="spec">客製</div><p>玩偶結合鮮花的創意花束，可愛吸睛，送禮最有記憶點。</p><a class="order" href="LINEURL">LINE 詢價訂購</a></div></article><article class="card"><div class="ph-wrap"><div class="ph ph-empty"><div class="pt"><b>客製禮品花束</b><small>照片準備中</small></div></div></div><div class="cb"><h4>客製禮品花束</h4><div class="spec">客製</div><p>花束結合小禮品（零食、酒、禮盒等）客製組合，獨一無二。</p><a class="order" href="LINEURL">LINE 詢價訂購</a></div></article></div><div class="note"><b>客製與配送：</b>花束可依預算、花材、顏色客製，僅限高雄市配送。請 LINE 告知款式、預算、收件人、地址與希望送達時間，我們為您安排。</div></div>
 <footer class="foot"><div class="fbrand">得名禮品</div>
 高雄市仁武區中正路 436 巷 10 弄 5-1 號・0920119944・24 小時接單<br>
 <a href="index.html">首頁</a>｜<a href="zhuisi.html">追思</a>｜<a href="kaimu.html">開幕</a>｜<a href="zhushou.html">祝壽</a>｜<a href="qingren.html">喜事禮品</a>｜<a href="catalog.html">完整價目表</a>｜LINE @dm58</footer>
-<div class="mbar"><a class="btn btn-tel" href="index.html">回首頁</a><a class="btn btn-line" href="LINEURL">LINE 訂購</a></div>
+<div class="mbar"><a class="btn btn-tel" href="TELURL">急單安排</a><a class="btn btn-line" href="LINEURL">LINE 訂購</a></div>
 <div class="lb" id="lb"><span class="x">&times;</span><img id="lbimg" alt=""></div>
 <script>
 var lineURL="https://line.me/R/ti/p/"+encodeURIComponent("@dm58"),telURL="tel:0920119944";

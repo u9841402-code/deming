@@ -26,7 +26,8 @@ header.top{position:sticky;top:0;z-index:40;background:rgba(243,237,225,.93);bac
 .back{font-size:13px;color:var(--ink-soft);font-weight:700}
 .back:hover{color:var(--ink)}
 .top-cta{margin-left:auto;display:flex;gap:8px}
-.btn{font-family:var(--sans);font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:999px;border:1.5px solid transparent;display:inline-flex;align-items:center;gap:6px;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s}
+.btn{font-family:var(--sans);font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:999px;border:1.5px solid transparent;display:inline-flex;align-items:center;gap:6px;cursor:pointer;white-space:nowrap;transition:transform .15s,box-shadow .15s,background .15s}
+@media(max-width:560px){.hideMobile{display:none}}
 .btn:active{transform:translateY(1px)}
 .btn-line{background:var(--pine);color:#fff}
 .btn-line:hover{box-shadow:0 6px 18px rgba(61,90,71,.32)}
@@ -69,7 +70,7 @@ header.top{position:sticky;top:0;z-index:40;background:rgba(243,237,225,.93);bac
 <header class="top"><div class="wrap top-in">
   <a class="brand" href="index.html"><span class="seal">得</span><b>得名禮品</b></a>
   <a class="back" href="index.html">← 回首頁</a>
-  <div class="top-cta"><a class="btn btn-tel" href="TELURL">0920119944</a><a class="btn btn-line" href="LINEURL">LINE 訂購</a></div>
+  <div class="top-cta"><a class="btn btn-tel hideMobile" href="TELURL">急單安排</a><a class="btn btn-line" href="LINEURL">LINE 訂購</a></div>
 </div></header>
 
 <section class="intro wrap">
